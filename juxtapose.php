@@ -23,6 +23,8 @@ class Juxtapose {
 
   // TODO: Sanitize attributes
   static function shortcode( $atts ) {
+    self::$shortcode_rendered = true;
+
     wp_enqueue_script('juxtapose');
 
     $a = shortcode_atts( array(
@@ -60,7 +62,9 @@ EOT;
     // Yeah i know, <link> inside <body> is not valid HTML.
     // But i don't want to load this css when there's not need to.
     // SUE ME.
-    echo '<link rel="stylesheet" href="//s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">';
+    if(self::$shortcode_rendered){
+      echo '<link rel="stylesheet" href="//s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">';
+    }    
   }
 
 }
