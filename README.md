@@ -4,13 +4,31 @@ Wordpress Plugin. Adds a [juxtapose] shortcode to embed Northwestern University 
 
 ## Usage
 
-Specify left and right images inside a *[juxtapose]* shortcode:
+### 1. Get image URLs
+
+You can get both image URLs from your WP Media Library:
+
+![wp1](https://cloud.githubusercontent.com/assets/420163/7289471/15f43acc-e947-11e4-9510-3eca21f563e5.PNG)
+
+### 2. Write a Juxtapose shortcode
+
+Having both URLs, i.e.:
+- http://localhost/wordpress/wp-content/uploads/2015/03/Hydrangeas.jpg
+- http://localhost/wordpress/wp-content/uploads/2015/03/Desert.jpg
+
+... you write a <code>juxtapose</code> shortcode in the Post WYSIWYG editor:
 
 ```
-[juxtapose leftsrc="/wordpress/wp-content/uploads/2015/03/Hydrangeas.jpg" rightsrc="/wordpress/wp-content/uploads/2015/03/Desert.jpg"]
+[juxtapose leftsrc="http://localhost/wordpress/wp-content/uploads/2015/03/Hydrangeas.jpg" rightsrc="http://localhost/wordpress/wp-content/uploads/2015/03/Desert.jpg"]
 ```
 
-## Options
+![w2](https://cloud.githubusercontent.com/assets/420163/7289605/c4aa2314-e948-11e4-9ff9-1dbe0cf21602.PNG)
+
+### 3. Publish and enjoy
+
+![w3](https://cloud.githubusercontent.com/assets/420163/7289675/b002f976-e949-11e4-9877-a5b39410af7f.gif)
+
+## Shortcode Options
 
 | Shortcode option | Default value | Valid values          | Notes                                                                                                                                           |
 |------------------|---------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
