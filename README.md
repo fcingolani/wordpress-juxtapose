@@ -2,6 +2,10 @@
 
 Wordpress Plugin. Adds a [juxtapose] shortcode to embed Northwestern University Knight Lab's [JuxtaposeJS](http://juxtapose.knightlab.com/) frame comparisons.
 
+## Download & Installation
+
+You can download the plugin [directly from GitHub as a .zip](https://github.com/fcingolani/wordpress-juxtapose/archive/master.zip) file. Then just upload it to your WordPress blog using the [Upload tab in the Add Plugins screen](https://codex.wordpress.org/Plugins_Add_New_Screen#Upload_Tab).
+
 ## Usage
 
 ### 1. Get image URLs
